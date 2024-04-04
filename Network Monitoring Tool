@@ -1,0 +1,43 @@
+Project Title: Simple Network Monitoring Tool
+
+Project Description:
+Create a simple network monitoring tool that allows users to monitor the status of devices on their local network. 
+This tool will provide basic information about devices such as their IP address, MAC address, and current status (online/offline).
+
+Features:
+
+Device Discovery: Implement a feature to scan the local network and discover active devices. You can use libraries like scapy or nmap to accomplish this.
+Device Information: Retrieve and display basic information about each discovered device, including its IP address, MAC address, and hostname.
+Ping Status: Implement a ping functionality to check the online status of each discovered device. Display whether each device is currently online or offline.
+Graphical User Interface (Optional): Create a simple GUI to present the network information in a user-friendly manner. You can use libraries like Tkinter for Python or Electron for JavaScript to build the GUI.
+Logging: Implement logging functionality to record network scan results and device status changes over time. This can be helpful for troubleshooting and historical analysis.
+Technologies:
+
+Python (for backend functionality)
+Scapy or Nmap (for network scanning)
+Tkinter (for GUI, if applicable)
+Logging library (e.g., Python's logging module)
+Potential Extensions:
+
+Email Alerts: Add functionality to send email alerts when certain devices go offline or when the network scan encounters errors.
+Device Details: Enhance the tool to retrieve additional information about devices, such as open ports or services running on them.
+Remote Monitoring: Extend the tool to support monitoring of devices on remote networks, possibly using SSH or other remote access protocols.
+
+network-monitoring-tool/
+│
+├── src/
+│   ├── main.py           # Main application logic
+│   ├── network_scan.py   # Functions for network scanning
+│   ├── gui.py            # GUI implementation (if applicable)
+│   └── utils.py          # Utility functions
+│
+├── tests/                # Unit tests
+│   ├── test_network_scan.py
+│   └── test_utils.py
+│
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+
+
+This project will provide you with a practical understanding of network scanning, device discovery, and basic GUI development. 
+Additionally, it will serve as a valuable tool for monitoring and managing devices on your local network.
